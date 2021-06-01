@@ -27,9 +27,11 @@
   background-color: black;
   z-index: -1;
   transform: translateY(-100%);
+  transition: transform 0.5s;
 }
 
-.btn:hover {
+.btn:hover::before {
+  transform: translateY(0);
 }
 
 .btn-primary {
