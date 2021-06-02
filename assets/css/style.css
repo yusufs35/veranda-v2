@@ -15,6 +15,17 @@ a:hover {
   color: var(--color-primary);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 /* COMMON */
 
 /* SLIDER */
@@ -23,5 +34,28 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+
+.slider .slider-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slider .slider-caption h4 {
+  font-size: 1.3rem;
+  letter-spacing: 0.7rem;
+  color: white;
+  text-shadow: 0 0 0.5rem black;
+}
+
+.slider .slider-caption h2 {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  text-shadow: 0 0 0.5rem black;
 }
 /* SLIDER */
